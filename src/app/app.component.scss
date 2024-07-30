@@ -1,0 +1,158 @@
+.chatContainer {
+    padding: 10px 0;
+    border: 1px solid #40579B;
+    display: flex;
+    justify-content: center;
+    border-top: 0px;
+}
+
+.chatHeading {
+    color: #40579B;
+}
+
+.chatpanel {
+    height: 85vh;
+    border: 1px solid #40579B;
+    border-bottom: 0;
+    overflow-y: scroll;
+}
+
+.querywrapper {
+    position: sticky;
+    bottom: 0px;
+}
+
+.chatpanel::-webkit-scrollbar-track
+  {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        // border-radius: 10px;
+        background-color: transparent;
+  }
+
+  .chatpanel::-webkit-scrollbar
+  {
+      width: 4px;
+      background-color: transparent;
+  }
+  
+  .chatpanel::-webkit-scrollbar-thumb
+  {
+    //   border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #78767A;
+  }
+
+  .questionBox {
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .app-questionBar-icon {
+    height: 45px;
+    width: 45px;
+    border: 3px solid rgb(39, 124, 198);
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: -2px;
+    color: rgb(39, 124, 198);
+    display: inline-block;
+    margin-left: 10px;
+    float: right;
+
+    .infoIcon {
+        padding-left: 9px;
+    }
+  }
+
+  .cursorHand {
+    cursor: pointer !important;
+}
+
+#usrQuestion {
+    resize: none;
+    font-size: 15px;
+    height: 75px;
+}
+
+.questionBox2 {
+    max-height: 82px !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.app-logo-landingbtn {
+    margin: 0px 0px 0px 5px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid greenyellow;
+    background-color: lightseagreen;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.question-asked {
+    margin: 5px;
+
+    p {
+        color: white;
+        margin-bottom: 5px;
+        font-size: 12px;
+        background: #bd79bd;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+.queryResponse {
+    margin: 5px;
+  }
+
+.responseText {
+    padding: 10px;
+    border-radius: 5px;
+    background: #7597ab;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--noAnimation {
+    position: absolute;
+    left: 1vw;
+}
+
+#WACContainer.WACContainer .WACWidget.WACWidget--launched.WACWidget--defaultElement, #watson-assistant-chat-container {
+    position: absolute !important;
+    left: 1vw !important;
+}
+
+.highlight {
+    border-radius: 10px;
+    margin-top: 20vh;
+    background: #7597ab;
+    padding: 10px;
+    color: white;
+}
+
+.answer {
+    margin-top: 10vh;
+    font-size: 14px; 
+}
+
+.GenAI-logo {
+    background: #bd79bd;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .GenAI-Text {
+    font-size: 1.75em;
+  }
+
+  .merck-logo {
+    display: flex;
+    justify-content: center;
+  }

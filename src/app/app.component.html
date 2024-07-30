@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- <div class="bgColor col-sm-4 col-md-4 col-lg-3 col2">
+      <div class="chatContainer">
+        <b class="chatHeading">Conversation</b>
+        <span class="glyphicon glyphicon-remove-circle chatCloseBtn cursorHand" (click)="btnCloseClicked($event)"></span>
+      </div>
+
+      <div class="chatpanel col-sm-12 col-md-12 col-lg-12" #scrollMe>
+
+        <div class="question-asked">
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+          <p>{{query}}</p>
+          <div class="responseText">{{queryResp}}</div>
+        </div>
+
+        <div class="queryResponse">
+          <div class="responseText">{{queryResp}}</div>
+          <div class="responseText">{{queryResp}}</div>
+          <div class="responseText">{{queryResp}}</div>
+          <div class="responseText">{{queryResp}}</div>
+          <div class="responseText">{{queryResp}}</div>
+        </div>
+
+      </div>
+      <div class="form-group querywrapper">
+        <input type="text" #message (keyup.enter)="setQuery()" class="form-control" id="exampleFormControlInput1" placeholder="What do you want to ask?">
+      </div>
+    </div> -->
+    <div class="GenAI-logo col-sm-12 col-md-12 col-lg-12 col12">
+      <!-- <div>GenAI Assistant</div> -->
+      <div class="merck-logo col-sm-2 col-md-2 col-lg-2 col2">
+          <img src="../assets/Image/mercklogo.png" alt="" width="100px" height="70px">
+      </div>
+
+      <div class="GenAI-Text col-sm-4 col-md-4 col-lg-4 col4">GenAI Assistant - Risk Registry</div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col6"></div>
+
+    </div>
+    <div class="page-content-wrapper col-sm-12 col-md-12 col-lg-12 col12">
+      <div class="row questionBox">
+        
+
+        <div class="col-lg-8 col-md-8 col-sm-8 hidden-sm hidden-xs">
+          <!-- <textarea type="text" [innerHTML]="query" #textmessage (keyup.enter)="setTextMessage($event)" rows="1" value="" id="usrQuestion" placeholder="What do you want to ask?" class="my-textarea form-control input-lg userTextArea questionBox2"> -->
+          <textarea type="text" #textmessage rows="1" value="" id="usrQuestion" class="my-textarea form-control input-lg userTextArea questionBox2" disabled>
+          </textarea>
+
+          <div class="answer" #answer [ngClass]="{'highlight': queryRespActive }">
+            <!-- <pre>{{queryResp}}</pre> -->
+              {{queryResp}}
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 qstnBox" style="padding-right: 0px;">
+          <!-- <div data-toggle="tooltip_info" data-original-title="<b>Information<b>" data-placement="bottom" class="app-questionBar-icon cursorHand">
+            <i aria-hidden="true" class="fa fa-info fa-2x infoIcon"></i>
+          </div> -->
+        </div>
+
+        <div _ngcontent-ako-c48="" class="col-lg-2 col-md-2 col-sm-2 hidden-sm hidden-xs">
+          <!-- <a _ngcontent-ako-c48=""><img _ngcontent-ako-c48="" src="../assets/images/landing-logo.png" class="app-logo-landingbtn"></a> -->
+        </div>
+
+      </div>
+    </div>
+
+    <div id="watson-assistant-chat-container"></div>
+  </div>
+</div>
